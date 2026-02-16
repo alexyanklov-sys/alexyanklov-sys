@@ -1,4 +1,4 @@
-## 👋 Hola, Alex
+## 👋 Hola, soy Alex
 <ol>
   <li>
     🎓 Estudiante de Sistemas Mircroinformaticos y Redes (SMR)
