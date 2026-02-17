@@ -10,20 +10,23 @@
         <h1>Alexy</h1>
 
         <nav>
-            <button onclick="ejercicio1()">Ejercicio 1</button>
-            <button onclick="ejercicio2()">Ejercicio 2</button>
-            <button onclick="ejercicio3('ms')">Ejercicio 3</button>
-            <button onclick="ejercicio4()">Ejercicio 4</button>
-            <button onclick="ejercicio5()">Ejercicio 5</button>
-            <button onclick="ejercicio6()">Ejercicio 6</button>
-            <button onclick="ejercicio7()">Ejercicio 7</button>
-            <button onclick="ejercicio8()">Ejercicio 8</button>
-            <button onclick="ejercicio9()">Ejercicio 9</button>
-            <button onclick="ejercicio10()">Ejercicio 10</button>
-            <button onclick="ejercicio11()">Ejercicio 11</button>
-            <button onclick="experimento(6, 8, 5)">experimento</button>
-            <button onclick="experimento2(4,7,3,9)">experimento2</button>
-            <button onclick="alert('loentiendo')">Extra</button>
+            <button onclick="ejercicio1()" style="background-color: rgb(17, 99, 194);">Ejercicio 1</button>
+            <button onclick="ejercicio2()" style="background-color: rgb(17, 99, 194);">Ejercicio 2</button>
+            <button onclick="ejercicio3('ms')" style="background-color: rgb(17, 99, 194);">Ejercicio 3</button>
+            <button onclick="ejercicio4()" style="background-color: rgb(17, 99, 194);">Ejercicio 4</button>
+            <button onclick="ejercicio5()" style="background-color: rgb(17, 99, 194);">Ejercicio 5</button>
+            <button onclick="ejercicio6()" style="background-color: rgb(17, 99, 194);">Ejercicio 6</button>
+            <button onclick="ejercicio7()" style="background-color: rgb(17, 99, 194);">Ejercicio 7</button>
+            <button onclick="ejercicio8()" style="background-color: rgb(17, 99, 194);">Ejercicio 8</button>
+            <button onclick="ejercicio9()" style="background-color: rgb(17, 99, 194);">Ejercicio 9</button>
+            <button onclick="ejercicio10()" style="background-color: rgb(17, 99, 194);">Ejercicio 10</button>
+            <button onclick="ejercicio11()" style="background-color: rgb(17, 99, 194);">Ejercicio 11</button>
+            <button onclick="ejercicio12()" style="background-color: rgb(17, 99, 194);">Ejercicio 12</button>
+            <button onclick="ejercicio13()" style="background-color: rgb(17, 99, 194);">Ejercicio 13</button>
+            <button onclick="pFor()" style="background-color: rgb(183, 20, 44);">Prueba/For</button>
+            <button onclick="experimento(6, 8, 5)" style="background-color: rgb(183, 20, 44);">Parametros/1</button>
+            <button onclick="experimento2(4,7,3,9)" style="background-color: rgb(183, 20, 44);">Parametros/2</button>
+            <button onclick="alert('loentiendo')" style="background-color: rgb(183, 20, 44);">Extra</button>
         </nav>
     </header>
     <main>
@@ -199,12 +202,39 @@
             }
 
         }
+
+         function ejercicio12(){
+           for(let i=10;i>=0;i--){
+                alert(i)
+           }
+                alert("Puto Felix")
+        }
+
+        function ejercicio13(){
+            let nmr
+            let suma=0
+            nmr=prompt("dime un numero")
+            for(let i=0; i<=nmr;i += 2){
+                suma+=i;
+            }
+            alert("la suma total es" + " " + suma);
+        }
+        
+        function pFor(){
+            let num
+            let ttl=0
+            num=prompt("Cual es tu numero favorito?")
+            for(let i=1; i<=num; i += 2){
+               ttl=ttl+i;
+            } 
+                alert("la suma total es"+" "+ ttl)
+        }
         function experimento(a, b, c){
             let rst;
             rst=(a+b)*c
             alert(rst)
         }
-        function experimento2(a,d){    //v
+        function experimento2(a,d){    //ni sirve, ni se deberia
             let rst;
             rst=a*d
             alert(rst)
