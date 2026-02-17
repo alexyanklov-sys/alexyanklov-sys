@@ -15,6 +15,14 @@
             <button onclick="ejercicio3('ms')">Ejercicio 3</button>
             <button onclick="ejercicio4()">Ejercicio 4</button>
             <button onclick="ejercicio5()">Ejercicio 5</button>
+            <button onclick="ejercicio6()">Ejercicio 6</button>
+            <button onclick="ejercicio7()">Ejercicio 7</button>
+            <button onclick="ejercicio8()">Ejercicio 8</button>
+            <button onclick="ejercicio9()">Ejercicio 9</button>
+            <button onclick="ejercicio10()">Ejercicio 10</button>
+            <button onclick="ejercicio11()">Ejercicio 11</button>
+            <button onclick="experimento(6, 8, 5)">experimento</button>
+            <button onclick="experimento2(4,7,3,9)">experimento2</button>
             <button onclick="alert('loentiendo')">Extra</button>
         </nav>
     </header>
@@ -59,9 +67,9 @@
             alert(ms)
         }
         function ejercicio4(){
-            let n1
-            let n2
-            let rst
+            let n1;
+            let n2;
+            let rst;
             n1=prompt("primer numero")
             n2=prompt("segundo numero")
             n1=parseFloat(n1)
@@ -71,12 +79,135 @@
 
         } 
         function ejercicio6(){
-            let n1
-            let n2
-            let rst
-            n1=prompt("primer numero")
-            n2=prompt("segundo numero")
-            
+          let num5;
+          let num6;
+             num5 = prompt("dame un numerito"); // 5
+             num6 = prompt("dame otro numerito");
+
+        if(isNaN(num5) == true || isNaN(num6) == true){
+            alert("pon un NUMERO");
+        }else{
+            num5 = parseFloat(num5);
+            num6 = parseFloat(num6);
+            alert(num5 + num6);
+        }
+    }
+        function ejercicio7(){
+            let diA 
+            diA=prompt("Que dia es hoy?")
+            switch(diA){
+                case "hoy es Lunes":
+                    alert(diA)
+                    break;
+                
+                case "hoy es Martes":
+                    alert(diA)
+                    break;
+
+                case "hoy es Miercoles":
+                    alert(diA)
+                    break;
+
+                case "hoy es Jueves":
+                    alert(diA)
+                    break;
+
+                case "hoy es Viernes":
+                    alert(diA)
+                    break;
+
+                case "hoy es Sabsdo":
+                    alert(diA)
+                    break;
+
+                 case "hoy es Domingo":
+                    alert(diA)
+                    break;
+                 
+                 default:
+                    alert("Opcion no valida, bobo")
+
+                
+            }
+        }
+            function ejercicio8(){
+                let diA 
+                diA=prompt("Que dia es hoy?")
+                diA = diA.toLowerCase();
+                switch(diA){
+                    case "lunes":
+                        alert(diA)
+                        break;
+                    
+                    case "martes":
+                        alert(diA)
+                        break;
+
+                    case "miercoles":
+                        alert(diA)
+                        break;
+                    
+                    case "miercoles":
+                        alert(diA)
+                        break;
+
+                    case "jueves":
+                        alert(diA)
+                        break;
+
+                    case "viernes":
+                        alert(diA)
+                        break;
+
+                    case "sabasdo":
+                        alert(diA)
+                        break;
+
+                    case "domingo":
+                        alert(diA)
+                        break;
+                    
+                    default:
+                        alert("Opcion no valida, bobo")
+
+                
+                     }
+        
+             }
+        function ejercicio9(){
+            for(let i=0;i < 10; i++){
+                alert("hola")
+                for(let j=0;j<10;j++){
+                    alert("adios")
+                }
+            }
+    
+        }
+        function ejercicio10(){
+            let nmr 
+            nmr=prompt("Dime un numero")
+            for(let i=1;i<=10; i++){
+                alert(nmr * i);
+            }
+                
+        }
+
+        function ejercicio11(){
+            let fruta=["pera","manzana","melon"];
+            for(let i=0; i < fruta.length;i++){
+                alert(fruta[i])
+            }
+
+        }
+        function experimento(a, b, c){
+            let rst;
+            rst=(a+b)*c
+            alert(rst)
+        }
+        function experimento2(a,d){    //v
+            let rst;
+            rst=a*d
+            alert(rst)
         }
     </script>
 </body>
