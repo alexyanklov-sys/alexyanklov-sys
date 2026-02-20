@@ -23,6 +23,12 @@
             <button onclick="ejercicio11()" style="background-color: rgb(17, 99, 194);">Ejercicio 11</button>
             <button onclick="ejercicio12()" style="background-color: rgb(17, 99, 194);">Ejercicio 12</button>
             <button onclick="ejercicio13()" style="background-color: rgb(17, 99, 194);">Ejercicio 13</button>
+            <button onclick="ejercicio14()" style="background-color: rgb(17, 99, 194);">Ejercicio 14</button>
+            <button onclick="ejercicio15(7)" style="background-color: rgb(17, 99, 194);">Ejercicio 15</button>
+            <button onclick="ejercicio16()" style="background-color: rgb(17, 99, 194);">Ejercicio 16</button>
+            <button onclick="ejercicio17()" style="background-color: rgb(17, 99, 194);">Ejercicio 17</button>
+            <button onclick="loginPT()" style="background-color: rgb(183, 20, 44);">Prueba/login</button>
+            <button onclick="bucleXD()" style="background-color: rgb(183, 20, 44);">Prueba/Bucle</button>
             <button onclick="pFor()" style="background-color: rgb(183, 20, 44);">Prueba/For</button>
             <button onclick="experimento(6, 8, 5)" style="background-color: rgb(183, 20, 44);">Parametros/1</button>
             <button onclick="experimento2(4,7,3,9)" style="background-color: rgb(183, 20, 44);">Parametros/2</button>
@@ -214,12 +220,86 @@
             let nmr
             let suma=0
             nmr=prompt("dime un numero")
+
             for(let i=0; i<=nmr;i += 2){
                 suma+=i;
             }
             alert("la suma total es" + " " + suma);
         }
-        
+        function ejercicio14(){
+            let numero=prompt("Dime tu nuero favorito")
+            numero=parseInt(numero);
+            let sumattl=0;
+            if(!isNaN(numero)==true){
+                for(let g=0; g<=numero;g++){
+                    if(g % 2==0){
+                        sumattl+=g
+                    }
+                    
+                }
+                alert("al sumar todos los numeros pares de "+numero+" dara este resultado "+sumattl)  
+            }       
+            else{
+                alert("ese no es un numero, webon")
+            }
+        }
+        function ejercicio15(numX){
+            let nt=prompt("Adivina el numero que estoy pensando")
+            if(numX!=nt){
+                alert("fallaste")
+            }
+            else{
+                alert("lees mentes?")
+            }
+        }
+         function ejercicio16(){
+            let invitados =["Anna" , "Juan" , "Pedro" , "Lucia"]
+            
+            invitados.array.forEach(invitado => {
+                alert("Bienbenido/a," + invitado)
+            });
+         }
+          function ejercicio17(){
+            let rnm= Math.floor(Math.random()*6)+ 1
+            
+            while(rnm!==6){
+                alert("no has sacado 6")
+                rnm= Math.floor(Math.random()*6)+ 1
+            }
+            alert("si, era 6")
+          }
+         function ejercicio18(){
+             let invitados =["Anna" , "Juan" , "Pedro" , "Lucia"]
+            
+            };
+            function loginPT(){
+                let usr=prompt("Usuario")
+                let cts=prompt("contraseña")
+                alert("Se sospecha que tus datos son de dudosa procedencia, porfavor, comfirma tu contraseña")
+                let ncts=prompt("comfirma tu Contraseña")
+                while(cts!==ncts){
+                    alert("Temo que esa contraseña es incorrecta. Deseas cambiarla?")
+                    cts=prompt("nueva contraseña")
+                    ncts=prompt("Contraseña")
+                   }
+                   alert("Contaseña correcta, bienvenido, "+ usr)
+            }
+        function bucleXD(){
+          let gtz= Math.floor(Math.random()*100)+ 1
+          let spk=prompt("Adivina el numero en el que estoy pensando")
+          
+          while(gtz !== spk){
+            if(spk < gtz){
+                alert("ese numero es demasiado bajo")
+                spk=prompt("intentalo otra vez")
+            }
+            else{
+                alert("ese numero es demasiado alto")
+                spk=prompt("intentalo otra vez")
+            }
+          }
+          alert("Increible, has acertado!")
+        }
         function pFor(){
             let num
             let ttl=0
